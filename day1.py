@@ -8,3 +8,4 @@ print(mystring[2:4])
 
 x="Hi This Is A String"
 print(x.split())
+
