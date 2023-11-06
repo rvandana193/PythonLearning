@@ -35,3 +35,10 @@ print(d)
 print(d.keys())
 print(d.values())
 
+t=('one',2)
+print(t[0])
+print(t[-1])
+t=('a','a','b')
+print(t.count('a'))
+print(t.index('b'))
+
