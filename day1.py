@@ -26,3 +26,12 @@ new_list= ['a','x','c']
 new_list.sort()
 print(new_list)
 
+d={'k1':20,'k2':[0,1,2],'k3':{'insidekey':100}}
+print(d['k2'])
+print(d['k3'])
+print(d['k3']['insidekey'])
+d['k4']=400
+print(d)
+print(d.keys())
+print(d.values())
+
