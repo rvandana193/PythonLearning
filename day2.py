@@ -49,3 +49,11 @@ def myfunc(*args,**kwargs):
     print(kwargs)
     print('I would like {} {}'.format(args[0],kwargs['food']))
 myfunc(10,20,30,fruit='orange',food='eggs',animal='cat')
+
+
+mynums=[1,2,3,4]
+print(list(map(lambda num:num**2,mynums)))
+
+
+names=['Sam','Sally','John']
+print(list(map(lambda x:x[::-1],names)))
