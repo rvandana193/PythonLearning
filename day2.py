@@ -42,3 +42,10 @@ mylist =['','O','']
 mixedup_list=shuffle_list(mylist)
 guess=player_guess()
 check_guess(mixedup_list,guess)
+
+
+def myfunc(*args,**kwargs):
+    print(args)
+    print(kwargs)
+    print('I would like {} {}'.format(args[0],kwargs['food']))
+myfunc(10,20,30,fruit='orange',food='eggs',animal='cat')
