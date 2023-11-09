@@ -19,3 +19,18 @@ class Circle():
 my_circle=Circle(30)
 print(my_circle.radius)
 print(my_circle.get_circumference())
+
+
+class Animal():
+    def __init__(self):
+        print('ANIMAL CREATED')
+    def who_am_i(self):
+        print('Iam an animal')
+    def eat(self):
+        print('Iam eating')
+class Dog(Animal):
+    def __init__(self):
+        Animal.__init__(self)
+        print('Dog Created')
+my_dog=Dog()
+my_dog.eat()
