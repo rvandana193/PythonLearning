@@ -34,3 +34,26 @@ class Dog(Animal):
         print('Dog Created')
 my_dog=Dog()
 my_dog.eat()
+
+
+class Book():
+    def __init__(self,title,author,pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+    def __str__(self):
+        return f"{self.title} by {self.author}"
+    def __len__(self):
+        return self.pages
+b=Book('Python Learning','John','200')
+print(b) #len(b)
+
+
+def ask_for_int():
+    try:
+        result = int(input("Please provide no:"))
+    except:
+        print("Whoops!That is not a number")
+    finally:
+        print("End of try, except and finally")
+ask_for_int()
